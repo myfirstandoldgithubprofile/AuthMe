@@ -1,3 +1,3 @@
 # AuthMe
 
-Simple app to request API services.
+Simple app to request (mocked) API services.
