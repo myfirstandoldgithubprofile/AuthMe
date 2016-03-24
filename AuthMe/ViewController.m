@@ -14,6 +14,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameField;
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordField;
+@property (weak, nonatomic) IBOutlet UILabel *authenticationResultLabel;
+@property (weak, nonatomic) IBOutlet UITextView *userRolesTextView;
 
 @end
 
@@ -27,6 +29,10 @@
 
 - (IBAction)authenticateUser:(id)sender {
     
+    // since it's mocked, it's gonna work every single time ;)
+    
+    self.authenticationResultLabel.text = @" ";
+    
     AuthModel *authModel = [[AuthModel alloc] init];
     authModel.userEmail = self.userNameField.text;
     authModel.userPassword = self.userPasswordField.text;
@@ -35,13 +41,23 @@
     
     AuthController *authController = [[AuthController alloc] init];
     [authController authenticateUser:authModel block:^(NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"Authentication error: %@", error.description);
-        } else {
-            NSLog(@"User Authenticated");
-        }
+        
+        dispatch_async(dispatch_get_main_queue(),
+                       ^{
+                           if (error) {
+                               NSLog(@"Authentication error: %@", error.description);
+                               self.authenticationResultLabel.text = @"Authentication error";
+                           } else {
+                               NSLog(@"User authenticated");
+                               self.authenticationResultLabel.text = @"User authenticated";
+                           }
+                       });
     }];
     
+}
+
+- (IBAction)listRoles:(id)sender {
+    self.userRolesTextView.text = @"teste";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ManageModel.h"
 
 @interface ManageService : NSObject
+
++ (void)requestUserRolesWithManageRequest:(ManageModel *_Nonnull)manageRequest block:(nullable void (^)(NSDictionary *_Nullable jsonDictionary, NSError *_Nullable error))block;
 
 @end

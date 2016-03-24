@@ -23,6 +23,9 @@
 		E89D49DE1CA460FB00A16242 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49DD1CA460FB00A16242 /* DateUtil.m */; };
 		E89D49E11CA4667200A16242 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E01CA4667200A16242 /* AuthController.m */; };
 		E89D49E41CA46F7F00A16242 /* ManageService.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E31CA46F7F00A16242 /* ManageService.m */; };
+		E89D49EA1CA4783F00A16242 /* ManageResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E91CA4783F00A16242 /* ManageResponseError.m */; };
+		E89D49ED1CA478D900A16242 /* ManageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49EC1CA478D900A16242 /* ManageModel.m */; };
+		E89D49F01CA478EE00A16242 /* ManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49EF1CA478EE00A16242 /* ManageController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,12 @@
 		E89D49E01CA4667200A16242 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
 		E89D49E21CA46F7F00A16242 /* ManageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageService.h; sourceTree = "<group>"; };
 		E89D49E31CA46F7F00A16242 /* ManageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageService.m; sourceTree = "<group>"; };
+		E89D49E81CA4783F00A16242 /* ManageResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageResponseError.h; sourceTree = "<group>"; };
+		E89D49E91CA4783F00A16242 /* ManageResponseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageResponseError.m; sourceTree = "<group>"; };
+		E89D49EB1CA478D900A16242 /* ManageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageModel.h; sourceTree = "<group>"; };
+		E89D49EC1CA478D900A16242 /* ManageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageModel.m; sourceTree = "<group>"; };
+		E89D49EE1CA478EE00A16242 /* ManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageController.h; sourceTree = "<group>"; };
+		E89D49EF1CA478EE00A16242 /* ManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,23 +139,9 @@
 				E89D499B1CA44CE200A16242 /* AppDelegate.m */,
 				E89D499D1CA44CE200A16242 /* ViewController.h */,
 				E89D499E1CA44CE200A16242 /* ViewController.m */,
-				E89D49DF1CA4667200A16242 /* AuthController.h */,
-				E89D49E01CA4667200A16242 /* AuthController.m */,
-				E89D49CD1CA44EE000A16242 /* AuthModel.h */,
-				E89D49CE1CA44EE000A16242 /* AuthModel.m */,
-				E89D49CA1CA44ECA00A16242 /* AuthService.h */,
-				E89D49CB1CA44ECA00A16242 /* AuthService.m */,
-				E89D49E21CA46F7F00A16242 /* ManageService.h */,
-				E89D49E31CA46F7F00A16242 /* ManageService.m */,
-				E89D49D01CA4504400A16242 /* AuthResponseError.h */,
-				E89D49D11CA4504400A16242 /* AuthResponseError.m */,
-				E89D49DC1CA460FB00A16242 /* DateUtil.h */,
-				E89D49DD1CA460FB00A16242 /* DateUtil.m */,
-				E89D49D31CA450AA00A16242 /* ResponseError.h */,
-				E89D49D91CA45F9A00A16242 /* RequestUtil.h */,
-				E89D49DA1CA45F9A00A16242 /* RequestUtil.m */,
-				E89D49D61CA457BF00A16242 /* SerializationUtil.h */,
-				E89D49D71CA457BF00A16242 /* SerializationUtil.m */,
+				E89D49E51CA4736D00A16242 /* Authentication */,
+				E89D49E71CA473A000A16242 /* Management */,
+				E89D49E61CA4739600A16242 /* Util */,
 				E89D49A01CA44CE200A16242 /* Main.storyboard */,
 				E89D49A31CA44CE200A16242 /* Assets.xcassets */,
 				E89D49A51CA44CE200A16242 /* LaunchScreen.storyboard */,
@@ -180,6 +175,50 @@
 				E89D49BE1CA44CE200A16242 /* Info.plist */,
 			);
 			path = AuthMeUITests;
+			sourceTree = "<group>";
+		};
+		E89D49E51CA4736D00A16242 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E89D49DF1CA4667200A16242 /* AuthController.h */,
+				E89D49E01CA4667200A16242 /* AuthController.m */,
+				E89D49CD1CA44EE000A16242 /* AuthModel.h */,
+				E89D49CE1CA44EE000A16242 /* AuthModel.m */,
+				E89D49CA1CA44ECA00A16242 /* AuthService.h */,
+				E89D49CB1CA44ECA00A16242 /* AuthService.m */,
+				E89D49D01CA4504400A16242 /* AuthResponseError.h */,
+				E89D49D11CA4504400A16242 /* AuthResponseError.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		E89D49E61CA4739600A16242 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E89D49DC1CA460FB00A16242 /* DateUtil.h */,
+				E89D49DD1CA460FB00A16242 /* DateUtil.m */,
+				E89D49D31CA450AA00A16242 /* ResponseError.h */,
+				E89D49D91CA45F9A00A16242 /* RequestUtil.h */,
+				E89D49DA1CA45F9A00A16242 /* RequestUtil.m */,
+				E89D49D61CA457BF00A16242 /* SerializationUtil.h */,
+				E89D49D71CA457BF00A16242 /* SerializationUtil.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		E89D49E71CA473A000A16242 /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				E89D49EE1CA478EE00A16242 /* ManageController.h */,
+				E89D49EF1CA478EE00A16242 /* ManageController.m */,
+				E89D49EB1CA478D900A16242 /* ManageModel.h */,
+				E89D49EC1CA478D900A16242 /* ManageModel.m */,
+				E89D49E21CA46F7F00A16242 /* ManageService.h */,
+				E89D49E31CA46F7F00A16242 /* ManageService.m */,
+				E89D49E81CA4783F00A16242 /* ManageResponseError.h */,
+				E89D49E91CA4783F00A16242 /* ManageResponseError.m */,
+			);
+			name = Management;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +357,12 @@
 				E89D499C1CA44CE200A16242 /* AppDelegate.m in Sources */,
 				E89D49991CA44CE200A16242 /* main.m in Sources */,
 				E89D49CC1CA44ECA00A16242 /* AuthService.m in Sources */,
+				E89D49EA1CA4783F00A16242 /* ManageResponseError.m in Sources */,
 				E89D49E11CA4667200A16242 /* AuthController.m in Sources */,
+				E89D49F01CA478EE00A16242 /* ManageController.m in Sources */,
 				E89D49CF1CA44EE000A16242 /* AuthModel.m in Sources */,
 				E89D49DE1CA460FB00A16242 /* DateUtil.m in Sources */,
+				E89D49ED1CA478D900A16242 /* ManageModel.m in Sources */,
 				E89D49D21CA4504400A16242 /* AuthResponseError.m in Sources */,
 				E89D49DB1CA45F9A00A16242 /* RequestUtil.m in Sources */,
 			);
