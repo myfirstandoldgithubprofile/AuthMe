@@ -15,6 +15,14 @@
 		E89D49A71CA44CE200A16242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89D49A51CA44CE200A16242 /* LaunchScreen.storyboard */; };
 		E89D49B21CA44CE200A16242 /* AuthMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49B11CA44CE200A16242 /* AuthMeTests.m */; };
 		E89D49BD1CA44CE200A16242 /* AuthMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49BC1CA44CE200A16242 /* AuthMeUITests.m */; };
+		E89D49CC1CA44ECA00A16242 /* AuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49CB1CA44ECA00A16242 /* AuthService.m */; };
+		E89D49CF1CA44EE000A16242 /* AuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49CE1CA44EE000A16242 /* AuthModel.m */; };
+		E89D49D21CA4504400A16242 /* AuthResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49D11CA4504400A16242 /* AuthResponseError.m */; };
+		E89D49D81CA457BF00A16242 /* SerializationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49D71CA457BF00A16242 /* SerializationUtil.m */; };
+		E89D49DB1CA45F9A00A16242 /* RequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49DA1CA45F9A00A16242 /* RequestUtil.m */; };
+		E89D49DE1CA460FB00A16242 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49DD1CA460FB00A16242 /* DateUtil.m */; };
+		E89D49E11CA4667200A16242 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E01CA4667200A16242 /* AuthController.m */; };
+		E89D49E41CA46F7F00A16242 /* ManageService.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E31CA46F7F00A16242 /* ManageService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,23 @@
 		E89D49B81CA44CE200A16242 /* AuthMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89D49BC1CA44CE200A16242 /* AuthMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthMeUITests.m; sourceTree = "<group>"; };
 		E89D49BE1CA44CE200A16242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E89D49CA1CA44ECA00A16242 /* AuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
+		E89D49CB1CA44ECA00A16242 /* AuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthService.m; sourceTree = "<group>"; };
+		E89D49CD1CA44EE000A16242 /* AuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthModel.h; sourceTree = "<group>"; };
+		E89D49CE1CA44EE000A16242 /* AuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthModel.m; sourceTree = "<group>"; };
+		E89D49D01CA4504400A16242 /* AuthResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthResponseError.h; sourceTree = "<group>"; };
+		E89D49D11CA4504400A16242 /* AuthResponseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthResponseError.m; sourceTree = "<group>"; };
+		E89D49D31CA450AA00A16242 /* ResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseError.h; sourceTree = "<group>"; };
+		E89D49D61CA457BF00A16242 /* SerializationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationUtil.h; sourceTree = "<group>"; };
+		E89D49D71CA457BF00A16242 /* SerializationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializationUtil.m; sourceTree = "<group>"; };
+		E89D49D91CA45F9A00A16242 /* RequestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUtil.h; sourceTree = "<group>"; };
+		E89D49DA1CA45F9A00A16242 /* RequestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestUtil.m; sourceTree = "<group>"; };
+		E89D49DC1CA460FB00A16242 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		E89D49DD1CA460FB00A16242 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		E89D49DF1CA4667200A16242 /* AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthController.h; sourceTree = "<group>"; };
+		E89D49E01CA4667200A16242 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
+		E89D49E21CA46F7F00A16242 /* ManageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageService.h; sourceTree = "<group>"; };
+		E89D49E31CA46F7F00A16242 /* ManageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +130,23 @@
 				E89D499B1CA44CE200A16242 /* AppDelegate.m */,
 				E89D499D1CA44CE200A16242 /* ViewController.h */,
 				E89D499E1CA44CE200A16242 /* ViewController.m */,
+				E89D49DF1CA4667200A16242 /* AuthController.h */,
+				E89D49E01CA4667200A16242 /* AuthController.m */,
+				E89D49CD1CA44EE000A16242 /* AuthModel.h */,
+				E89D49CE1CA44EE000A16242 /* AuthModel.m */,
+				E89D49CA1CA44ECA00A16242 /* AuthService.h */,
+				E89D49CB1CA44ECA00A16242 /* AuthService.m */,
+				E89D49E21CA46F7F00A16242 /* ManageService.h */,
+				E89D49E31CA46F7F00A16242 /* ManageService.m */,
+				E89D49D01CA4504400A16242 /* AuthResponseError.h */,
+				E89D49D11CA4504400A16242 /* AuthResponseError.m */,
+				E89D49DC1CA460FB00A16242 /* DateUtil.h */,
+				E89D49DD1CA460FB00A16242 /* DateUtil.m */,
+				E89D49D31CA450AA00A16242 /* ResponseError.h */,
+				E89D49D91CA45F9A00A16242 /* RequestUtil.h */,
+				E89D49DA1CA45F9A00A16242 /* RequestUtil.m */,
+				E89D49D61CA457BF00A16242 /* SerializationUtil.h */,
+				E89D49D71CA457BF00A16242 /* SerializationUtil.m */,
 				E89D49A01CA44CE200A16242 /* Main.storyboard */,
 				E89D49A31CA44CE200A16242 /* Assets.xcassets */,
 				E89D49A51CA44CE200A16242 /* LaunchScreen.storyboard */,
@@ -270,9 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89D49E41CA46F7F00A16242 /* ManageService.m in Sources */,
 				E89D499F1CA44CE200A16242 /* ViewController.m in Sources */,
+				E89D49D81CA457BF00A16242 /* SerializationUtil.m in Sources */,
 				E89D499C1CA44CE200A16242 /* AppDelegate.m in Sources */,
 				E89D49991CA44CE200A16242 /* main.m in Sources */,
+				E89D49CC1CA44ECA00A16242 /* AuthService.m in Sources */,
+				E89D49E11CA4667200A16242 /* AuthController.m in Sources */,
+				E89D49CF1CA44EE000A16242 /* AuthModel.m in Sources */,
+				E89D49DE1CA460FB00A16242 /* DateUtil.m in Sources */,
+				E89D49D21CA4504400A16242 /* AuthResponseError.m in Sources */,
+				E89D49DB1CA45F9A00A16242 /* RequestUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
