@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ManageModel.h"
 
 @interface ManageController : NSObject
+
+- (void)showUserRoles:(ManageModel *_Nonnull)manageModel block:(nullable void (^)(NSError *_Nullable error))block;
 
 @end

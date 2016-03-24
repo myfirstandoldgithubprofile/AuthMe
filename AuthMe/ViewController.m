@@ -10,6 +10,9 @@
 #import "AuthModel.h"
 #import "AuthService.h"
 #import "AuthController.h"
+#import "ManageModel.h"
+#import "ManageService.h"
+#import "ManageController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameField;
@@ -57,7 +60,28 @@
 }
 
 - (IBAction)listRoles:(id)sender {
-    self.userRolesTextView.text = @"teste";
+    self.userRolesTextView.text = @" ";
+    
+    ManageModel *manageModel = [[ManageModel alloc] init];
+    manageModel.userEmail = self.userNameField.text;
+    manageModel.applicationKey = @"00000000-0000-0000-0000-000000000000";
+    
+    ManageController *manageController = [[ManageController alloc] init];
+    [manageController showUserRoles:manageModel block:^(NSError * _Nullable error) {
+        
+        dispatch_async(dispatch_get_main_queue(),
+                       ^{
+                           if (error) {
+                               NSLog(@"Manage service error: %@", error.description);
+                               self.userRolesTextView.text = @"Manage service error";
+                           } else {
+                               NSLog(@"Manage service ok");
+                               self.userRolesTextView.text = @"foooooi";
+                           }
+                       });
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

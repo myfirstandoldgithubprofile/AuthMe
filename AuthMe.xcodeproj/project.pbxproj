@@ -26,6 +26,7 @@
 		E89D49EA1CA4783F00A16242 /* ManageResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49E91CA4783F00A16242 /* ManageResponseError.m */; };
 		E89D49ED1CA478D900A16242 /* ManageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49EC1CA478D900A16242 /* ManageModel.m */; };
 		E89D49F01CA478EE00A16242 /* ManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49EF1CA478EE00A16242 /* ManageController.m */; };
+		E89D49F31CA47B3C00A16242 /* CryptographUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D49F21CA47B3C00A16242 /* CryptographUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		E89D49EC1CA478D900A16242 /* ManageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageModel.m; sourceTree = "<group>"; };
 		E89D49EE1CA478EE00A16242 /* ManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageController.h; sourceTree = "<group>"; };
 		E89D49EF1CA478EE00A16242 /* ManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageController.m; sourceTree = "<group>"; };
+		E89D49F11CA47B3C00A16242 /* CryptographUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptographUtil.h; sourceTree = "<group>"; };
+		E89D49F21CA47B3C00A16242 /* CryptographUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptographUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 				E89D49DA1CA45F9A00A16242 /* RequestUtil.m */,
 				E89D49D61CA457BF00A16242 /* SerializationUtil.h */,
 				E89D49D71CA457BF00A16242 /* SerializationUtil.m */,
+				E89D49F11CA47B3C00A16242 /* CryptographUtil.h */,
+				E89D49F21CA47B3C00A16242 /* CryptographUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89D49F31CA47B3C00A16242 /* CryptographUtil.m in Sources */,
 				E89D49E41CA46F7F00A16242 /* ManageService.m in Sources */,
 				E89D499F1CA44CE200A16242 /* ViewController.m in Sources */,
 				E89D49D81CA457BF00A16242 /* SerializationUtil.m in Sources */,
